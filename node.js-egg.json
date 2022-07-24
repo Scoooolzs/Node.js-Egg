@@ -18,7 +18,7 @@
         "ghcr.io\/parkervcp\/yolks:nodejs_12"
     ],
     "file_denylist": [],
-    "startup": "${command_first}; fi; if",
+    "startup": "${command_first}; fi; if [[ ! -z ${command_second} ]]; then ${command_second};",
     "config": {
         "files": "{}",
         "startup": "{\r\n    \"done\": \"change this part\"\r\n}",
